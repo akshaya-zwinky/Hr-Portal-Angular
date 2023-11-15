@@ -1,0 +1,44 @@
+<h2>Update Job</h2>
+<div [hidden]="flag">
+    <form (ngSubmit)="updateJob()">
+        <label for="name">JobId</label>
+        <input type="text" name="jobId" [(ngModel)]="job.jobId">
+        <br>
+        <label for="Title">Name</label>
+        <input type="text" name="name" [(ngModel)]="job.jobId">
+        <br>
+        <label for="qualification">qualification</label>
+        <input type="text" name="qualification" [(ngModel)]="job.qualification">
+       <br>
+        <label for="skill1">skill1</label>
+        
+        <input type="text" name="skill1" [(ngModel)]="job.skill1">
+        <br>
+        <label for="skill2">skill1</label>
+        
+        <input type="text" name="skill2" [(ngModel)]="job.skill2">
+        <br>
+
+        <label for="skill3">skill1</label>
+        
+        <input type="text" name="skill3" [(ngModel)]="job.skill3">
+        <br>
+
+
+        
+        
+        
+
+
+
+
+
+        <input type="submit" value="update new Job">
+    </form>
+    
+</div>
+<div [hidden] = "!flag">
+    <p>Employee details submitted successfully!</p>
+    
+</div>
+<button (click)="Backto()">Back</button>

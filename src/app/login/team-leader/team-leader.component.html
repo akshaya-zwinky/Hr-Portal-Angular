@@ -1,0 +1,22 @@
+<p>team-leader works!</p>
+ <button (click)=" gotoprofile()">profile</button>   <button (click)="sendrequest()">Send Request</button>   <button (click)="gotologin()">Logout</button>
+ <table border="1">
+    <tr>
+        <th>JobId</th>
+        <th>Title</th>
+        
+        <th colspan="3"> Action</th>
+        
+    </tr>
+    <tr *ngFor="let job of jobDescription">
+        <td>{{job.jobId}}</td>
+        <td>{{job.title}}</td>
+        <!-- <td><button (click)="deleteJob(job.jobId)">Delete</button></td> -->
+        <td><button (click)="detailsJob(job.jobId)">Details</button></td>
+        <td><button (click)="updateJobdescription(job.jobId)">Update</button></td>
+    </tr>
+</table>
+
+
+
+ 

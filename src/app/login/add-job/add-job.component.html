@@ -1,0 +1,49 @@
+<h1>New Employee</h1>
+<div [hidden]="flag"> 
+<form (ngSubmit)="saveJob()">
+    <label>Job Title::</label>
+    <input type="text" name="name" [(ngModel)]="job.title">
+    <br><br>
+    <label>Job Qualification::</label>
+    <input type="text" name="qualification" [(ngModel)]="job.qualification">
+    <br><br>
+    <label>Job skill1 ::</label>
+    <input type="text" name="skill1" [(ngModel)]="job.skill1">
+    <br><br>
+
+    <label>Job skill2 ::</label>
+    <input type="text" name="skill2" [(ngModel)]="job.skill2">
+    <br><br>
+    <label>Job skill3 ::</label>
+    <input type="text" name="skill3" [(ngModel)]="job.skill3">
+    <br><br>
+
+    <label>Job projectId ::</label>
+    <input type="text" name="projectId" [(ngModel)]="job.projectId">
+    <br><br>
+     
+
+    <label>Job requiredEmployees ::</label>
+    <input type="text" name="requiredEmployees" [(ngModel)]="job.requiredEmployees">
+    <br><br>
+   
+    <label>Job status ::</label>
+    <input type="text" name="status" [(ngModel)]="job.status">
+    <br><br>
+
+    
+
+    
+
+
+
+
+    <input type="submit" value="Add new Job">
+</form>
+</div>
+<div [hidden]="!flag">
+    <p> new employee added successfully</p>
+      
+</div>
+
+<button (click)="Backto()">Back</button>
